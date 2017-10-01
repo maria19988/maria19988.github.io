@@ -1,53 +1,123 @@
 <!DOCTYPE html>
-<html> 
-
+<html>
 <head>
+  <title>My Resume</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      position: relative; 
+  }
+  .affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+  .navbar {
+      margin-bottom: 0px;
+  }
 
- <link type="text/css" href="stylesheet.css">
- <title color="blue"> My Resume </title>
- 
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 50px;
+  }
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #814374 ;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #51A39D ;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #B7695C ;}
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #CDBB79 ;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #F2F2F2 ;}
+  </style>
 </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<body bgcolor="#E6E6FA" font size = "80"> 
-
-
-
-<div class="intro">
-<p> <b>Name:</b> Maria
-<br> <b>Last Name:</b> Souaid
-<br> <b>Age:</b> 18
-<br> <b>Major: </b> Computer Science
-<br> <b>Year:</b> Second year
-<div class="picture">
-<img class="Image" src="geek.jpg" class="img-circle" alt="pic" width="304" height="236"> </div>
+<div class="container-fluid" style="background-color:#06425C;color:#fff;height:200px;">
+  <h1>This is my resume</h1>
+  <h3>Hello, Wellcome to this page </h3>
 </div>
-<hr>
 
-<div class="cont">
-<p> <b>Programming languages that I know: </b></p>
- <ul>
- <li> Java </li>
- <li> C language </li>
- <li> HTML </li>
- <li> CSS </li>
- <li> PHP </li>
- </ul>
- </div>
- 
-<div class="courses">
-<p> <b>Programming languages that I know: </b> </p>
- <ul>
- <li> Algorithms and Data Structures </li>
- <li> Web Development </li>
- <li> Database </li>
- <li> Operating Systems </li>
- <li> English </li>
- </ul>
- </div>
- 
- 
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Section 4-1</a></li>
+              <li><a href="#section42">Section 4-2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section1" class="container-fluid">
+	<h1>Introduction</h1>
+		<p> <b>Name:</b> Maria
+		<br> <b>Last Name:</b> Souaid
+		<br> <b>Age:</b> 18
+		<br> <b>Major: </b> Computer Science
+		<br> <b>Year:</b> Second year
+		<div class="picture">
+			<img class="Image" src="geek.jpg" class="img-circle" alt="pic" width="264" height="196"> </div>
+</div>
+<div id="section2" class="container-fluid">
+  <h1>Programming Languages</h1>
+  <p> <b>Programming languages that I know: </b> </p>
+	<ul>
+		<li> Java </li>
+		<li> C language </li>
+		<li> HTML </li>
+		<li> CSS </li>
+		<li> PHP </li>
+	</ul>
+</div>
+<div id="section3" class="container-fluid">
+  <h1>Courses</h1>
+  <p> <b>Courses that I am taking: </b> </p>
+	<ul>
+		<li> Algorithms and Data Structures </li>
+		<li> Web Development </li>
+		<li> Database </li>
+		<li> Operating Systems </li>
+		<li> English </li>
+	</ul>
+</div>
+<div id="section41" class="container-fluid">
+  <h1>About me: </h1>
+  <p> <b>My hobbies include: </b> </p>
+	<ul>
+		<li> Reading </li>
+		<li> Dancing </li>
+		<li> Sleeping </li>
+		<li> Food </li>
+	</ul>
+</div>
+<div id="section42" class="container-fluid">
+  <h1>Books </h1>
+  <p> <b>My favourite books are: </b> </p>
+	<ul>
+		<li> Crooked house </li>
+		<li> Broken wings </li>
+		<li> The shining </li>
+		<li> The fireman </li>
+	</ul>
+</div>
 
 </body>
-
-
 </html>
